@@ -14,11 +14,13 @@
   <title>bootstrap</title>
 </head>
 
-
+<?php 
+ $logoimg=get_header_image(); 
+?>
 
 
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="<?php bloginfo('template_directory'); ?>/images/coffee-time-png_91570.jpg" alt=""></a>
+      <a class="navbar-brand" href="#"><img src="<?php echo $logoimg; ?>/images/coffee-time-png_91570.jpg" alt="failtoloadimage"></a>
 
       <?php wp_nav_menu(array('theme_location'=>'primary-menu','menu_class'=>'nav')) ?>      
     </div>

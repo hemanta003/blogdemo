@@ -4,4 +4,5 @@ register_nav_menus(
 );
 
 add_theme_support('post-thumbnails');
+add_theme_support('custom-header');
 ?>
