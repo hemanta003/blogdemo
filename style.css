@@ -28,12 +28,15 @@ Description: blog
     display: flex;
     
 }
-.galary img{
-    height: 150px;
-    width: 300px;
-    box-shadow: 1px 2px 10px 5px rgb(60, 19, 207);
-animation:slider 5s infinite linear;
+.nav{
+    display: flex;
+   
 }
-@keyframes slider{
- 0%{}20%{}40%{}60%{}80%{}100%{}   
+.nav li{
+list-style: none;
+margin-left: 90px;
+font-size: 2rem;
+}
+.nav  a{
+    text-decoration: none;
 }
