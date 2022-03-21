@@ -11,7 +11,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bootstrap</title>
+  <title>khateraho</title>
+  <?php wp_head(); ?>
 </head>
 
 <?php 
@@ -20,7 +21,7 @@
 
 
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="<?php echo $logoimg; ?>/images/coffee-time-png_91570.jpg" alt="failtoloadimage"></a>
+      <a class="navbar-brand" href="home"><img src="<?php bloginfo('template_directory');?>/images/coffee-time-png_91570.jpg" alt="failtoloadimage"></a>
 
       <?php wp_nav_menu(array('theme_location'=>'primary-menu','menu_class'=>'nav')) ?>      
     </div>
