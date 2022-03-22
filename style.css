@@ -70,20 +70,18 @@ padding: 10px;
 
 /* blog part designung */
 .blog-part{
+    
     height: 500px;
         display: inline-block;
-    border: 2px solid gray;
-padding: 20px;
+    padding: 20px;
 }
 .blog-item img{
+    display: flex;
     margin: 20px;
 height: 250px;
     width: 370px;
 }
-.blog-item p{
-display: block;
-   
-}
+
 .comment-form{
     padding: 20px;
 }
