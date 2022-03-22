@@ -46,7 +46,7 @@ visibility: visible;
 .sub-menu{
 position: absolute;
 top: 100%;
-width: 120px;
+width: 220px;
 background: gray;
 opacity: 0;
 transition: 2s;
@@ -105,3 +105,14 @@ display: block;
     color: yellow; border: 2px solid red;
     border-radius: 20px;
 }
+.blogs{
+        display: flex;
+  }
+  .item img{
+      display: flex;
+    width: 400px;
+     margin:10px;
+  }
+  h1{
+    text-align: center;
+  }

@@ -7,6 +7,8 @@ get_header();
 <h1 style="color:red ; ">Contact Us:</h1>
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nam laborum impedit incidunt delectus voluptatibus quas praesentium exercitationem, cum totam amet dolore a voluptatum tempore omnis aperiam fugit at commodi.
 </div>
+
+
 <?php
 
 get_footer();
