@@ -10,10 +10,8 @@ register_sidebar(
 array(
     'name'=>'Sidebar Location',
     'id'=>'sidebar'    
-)
-
-)
-
+));
+add_theme_support('custom-background');
 
 
 

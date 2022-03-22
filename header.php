@@ -16,6 +16,8 @@
     <?php if (is_front_page()){echo "|"; bloginfo('description');} ?></title>
   <?php wp_head(); ?>
 </head>
+<body <?php body_class(); ?> >
+  
 
 <?php 
  $logoimg=get_header_image(); 
