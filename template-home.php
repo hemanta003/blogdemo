@@ -24,7 +24,7 @@ while($lunchtime->have_posts())  {
     </div>
 <?php 
 $lunch=get_terms(
-  ['taxonomy'=>'lunch','hide_empty'=>false]
+  ['taxonomy'=>'lunch','hide_empty'=>false,'orderby'=>'name','order'=>'DESC']
   );
  
 foreach ($lunch as $lunchData){
