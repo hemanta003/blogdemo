@@ -22,8 +22,18 @@ while($lunchtime->have_posts())  {
   </div>  
   <?php } ?>
     </div>
+<?php 
+$lunch=get_terms(
+  ['taxonomy'=>'lunch','hide_empty'=>false]
+  );
+ 
+foreach ($lunch as $lunchData){
+?>
+<div class="icondigi">
+  <img src="<?php bloginfo('template_directory') ?>/images/contact.jpg" alt="loading"/><a href="#"><h3><?php echo $lunchData->name; ?></h3></a>
 
-
+</div>
+<?php } ?>
 
 
 <?php get_footer() ?>
