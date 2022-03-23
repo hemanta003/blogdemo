@@ -28,9 +28,12 @@ $lunch=get_terms(
   );
  
 foreach ($lunch as $lunchData){
+  $meta_image = get_wp_term_image($lunchData->term_id);
 ?>
 <div class="icondigi">
-  <img src="<?php bloginfo('template_directory') ?>/images/contact.jpg" alt="loading"/><a href="#"><h3><?php echo $lunchData->name; ?></h3></a>
+  <?php if($meta_image!="") { ?>
+  <img src="<?php print_r($meta_image); ?>"/>
+  <?php } ?><a href="#"><h3><?php echo $lunchData->name; ?></h3></a>
 
 </div>
 <?php } ?>
