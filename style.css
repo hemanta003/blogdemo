@@ -126,3 +126,15 @@ height: 250px;
   .icondigi{
       display: flex;
   }
+  .lowerpart{
+    display: inline-block;
+}
+.lowerpart a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.lowerpart img{
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}

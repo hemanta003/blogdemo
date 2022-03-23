@@ -2,6 +2,10 @@
 // Template Name:Home
 get_header();
  
+
+
+$cat=get_categories(array('taxonomy'=>'category'));
+
 ?>
 <div class="blogs">
 <?php
@@ -22,6 +26,7 @@ while($lunchtime->have_posts())  {
   </div>  
   <?php } ?>
     </div>
+
 <?php 
 $lunch=get_terms(
   ['taxonomy'=>'lunch','hide_empty'=>false,'orderby'=>'name','order'=>'DESC']
@@ -29,15 +34,32 @@ $lunch=get_terms(
  
 foreach ($lunch as $lunchData){
   $meta_image = get_wp_term_image($lunchData->term_id);
-?>
+?> 
 <div class="icondigi">
   <?php if($meta_image!="") { ?>
   <img src="<?php print_r($meta_image); ?>"/>
-  <?php } ?><a href="#"><h3><?php echo $lunchData->name; ?></h3></a>
+  <?php } ?>
+  <a href="<?php echo get_category_link($lunchData->term_id); ?>"><h3><?php echo $lunchData->name; ?></h3></a>
 
 </div>
 <?php } ?>
 
+<hr>
+<div class="lowerpart">
+  <h2>course</h2>
+  <?php
+  
+foreach ($cat as $catvalue) {
+
+
+?>
+  <div class="lowerpart-item"><img src="<?php bloginfo('template_directory'); ?>/images/logo.jpg" alt="logo"><a href="<?php get_category_link($catvalue->term_id); ?>
+"><?php echo ($catvalue->name); ?></a>
+</div>
+<?php } ?> 
+
+
+</div>
 
 <?php get_footer() ?>
 
